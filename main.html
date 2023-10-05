@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Sistemas Operativos-Formulario</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <form action="guardar.php" method="post">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="genero">Género:</label>
+        <input type="radio" id="hombre" name="genero" value="Hombre" required>
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="genero" value="Mujer" required>
+        <label for="mujer">Mujer</label><br><br>
+
+        <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" name="ciudad" required>
+            <option value="Selecciona una ciudad">Selecciona una ciudad</option>
+            <option value="Ciudad 1">Medellin</option>
+            <option value="Ciudad 2">Cali</option>
+            <option value="Ciudad 3">Bogota</option>
+        </select><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
